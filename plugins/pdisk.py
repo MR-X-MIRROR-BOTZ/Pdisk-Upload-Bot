@@ -21,7 +21,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 @Client.on_message(filters.regex('http') & filters.private)
 async def pdisk(bot, message):
         text = message.text
-        if 'cofilink.com' in text or 'www.cofilink.com' in text or 'pdisk.me' in text or 'www.pdisk.me' in text:
+        if 'pdisk.pro' in text or 'www.pdisk.pro' in text or 'cofilink.com' in text or 'www.cofilink.com' in text or 'pdisk.me' in text or 'www.pdisk.me' in text:
             spl = link.split('=')
             vd_id = spl[-1]
             auth = "http://pdisk.pro/open/clone_item/?api_key="+Config.API_KEY+"&item_id="+vd_id
@@ -45,10 +45,10 @@ async def pdisk(bot, message):
             #print(res)
             id = res["data"]["item_id"]
             await message.reply_chat_action("typing")
-            pdisk = "https://cofilink.com/share-video?videoid="+id      
+            pdisk = "https://pdisk.pro/share-video?videoid="+id      
             await message.reply_photo(
-                photo="https://static10.tgstat.ru/channels/_0/f3/f3218a8a0d195d12e73f6b69e51bbb4f.jpg",
-                caption="**URL:** `"+pdisk+"`\n\n**The PDisk Link Is Below The Provided Link Will Be Uploaded in few minutes.\nThank You**\n\n**@HeimanSupports**",
+                photo="https://telegra.ph/file/0b8aa5b80bbae87ab5e6c.jpg",
+                caption="**URL:** `"+pdisk+"`\n\n**The PDisk Link Is Below The Provided Link Will Be Uploaded in few minutes.\nThank You**\n\n**@MR_X_MIRROR**",
                 reply_markup=InlineKeyboardMarkup([
                     [ InlineKeyboardButton(text="🔗 PDisk 🔗", url=f"{pdisk}")]
                 ])
