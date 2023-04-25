@@ -13,8 +13,8 @@
     "thumbnail",
     "title"
   ],
-  "success_url": "https://telegram.me/PDiskXUploaderBot",
-  "website": "https://github.com/HeimanPictures/HeimanPictures/",
+  "success_url": "https://github.com/MR-X-MIRROR-BOTZ/Pdisk-Upload-Bot",
+  "website": "https://github.com/MR-X-MIRROR-BOTZ/Pdisk-Upload-Bot/",
   "repository": "https://github.com/HeimanPictures/Pdisk-Upload-Bot",
   "env": {
     "BOT_TOKEN": {
@@ -43,7 +43,7 @@
   "formation": {
     "worker": {
       "quantity": 1,
-      "size": "free"
+      "size": "eco"
     }
   }
 }
