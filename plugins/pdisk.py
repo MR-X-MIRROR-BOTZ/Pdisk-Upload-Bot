@@ -24,7 +24,7 @@ async def pdisk(bot, message):
         if 'pdisk.pro' in text or 'www.pdisk.pro' in text or 'cofilink.com' in text or 'www.cofilink.com' in text or 'pdisk.me' in text or 'www.pdisk.me' in text:
             spl = link.split('=')
             vd_id = spl[-1]
-            auth = "https://pdisk.pro/api/upload/server?key="+Config.API_KEY+"&item_id="+vd_id
+            auth = "https://pdisk.investro1.com/api/upload/server?key="+Config.API_KEY+"&item_id="+vd_id
         else:
             try:
             # Solved https://github.com/HeimanPictures/Pdisk-Upload-Bot/issues/1#issue-1018422275
@@ -33,12 +33,12 @@ async def pdisk(bot, message):
                 title = spl[1]
                 try:
                     thumb = spl[2]
-                    auth = "https://pdisk.pro/api/upload/server?key="+Config.API_KEY+"&content_src="+url+"&link_type=link"+"&title="+title+"&cover_url="+thumb 
+                    auth = "https://pdisk.investro1.com/api/upload/server?key="+Config.API_KEY+"&content_src="+url+"&link_type=link"+"&title="+title+"&cover_url="+thumb 
                 except Exception:
-                    auth = "https://pdisk.pro/api/upload/server?key="+Config.API_KEY+"&content_src="+url+"&link_type=link"+"&title="+title
+                    auth = "https://pdisk.investro1.com/api/upload/server?key="+Config.API_KEY+"&content_src="+url+"&link_type=link"+"&title="+title
             except Exception:
                 url = text
-                auth = "https://pdisk.pro/api/upload/server?key="+Config.API_KEY+"&content_src="+url+"&link_type=link"+"&title=None"
+                auth = "https://pdisk.investro1.com/api/upload/server?key="+Config.API_KEY+"&content_src="+url+"&link_type=link"+"&title=None"
             headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36'}
             r = requests.get(auth,headers)
             res = r.json()
