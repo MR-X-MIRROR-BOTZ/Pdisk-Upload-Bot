@@ -1,5 +1,4 @@
 requests
-aiohttp==3.8.1
 Pyrogram==2.0.30
 TgCrypto==1.2.3
 bs4
