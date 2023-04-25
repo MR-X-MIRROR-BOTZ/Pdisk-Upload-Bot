@@ -22,11 +22,11 @@ Hi {}!
 This Is PDisk Bot For Free 😇
 Read /help Carefully & Do Follow All Given Instruction...
 
-For More Bots Join @HeimanSupports
+For More Bots Join @MR_X_MIRROR
 """
 
 HELP = """
-**Send Me Direct Download Link Like Mirror Or From @LinkXGenBot.
+**Send Me Direct Download Link.
 
 Send As This Format**
 
@@ -38,7 +38,7 @@ Send As This Format**
 
 **NOTE:
 ➢ Do Not Spam, Send Link One By One
-➢ To Know Status Just Go To cofilink.com/home**
+➢ To Know Status Just Go To pdisk.pro/home**
 """
 
 # NON_OWNER = "You Can't Use Me Ask My [Owner](tg://user?id={})"
@@ -52,8 +52,8 @@ START_BUTTONS = InlineKeyboardMarkup(
     )
 HELP_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('📮 Update 📮', url='https://telegram.dog/HeimanSupports/'),
-        InlineKeyboardButton('🛠️ Support 🛠️', url='https://telegram.dog/HeimanSupport/'),
+        InlineKeyboardButton('📮 Update 📮', url='https://telegram.dog/MR_X_MIRROR/'),
+        InlineKeyboardButton('🛠️ Support 🛠️', url='https://telegram.dog/MR_X_MIRROR/'),
         ],[
         InlineKeyboardButton('Home', callback_data='home'),
         InlineKeyboardButton('Close', callback_data='close')
